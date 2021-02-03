@@ -77,11 +77,15 @@ formElement.addEventListener('submit', e => {
 		messageElement.appendChild(listElement);
 		listElement.appendChild(messageItemElement);
 		listElement.style.display = 'block'
+		let contextMenu = listElement;
 		listElement.addEventListener('click', e => {
 			if (e.target.className == 'message-item-delete'){
 				let parentElement = e.target.parentElement.parentElement.parentElement;
 				messagesListElement.removeChild(parentElement);
 			}
+		})
+		document.body.addEventListener('click', e => {
+			contextMenu.style.display = 'none';
 		})
 	})
 })
