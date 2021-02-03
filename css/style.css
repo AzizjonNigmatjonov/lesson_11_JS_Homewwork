@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.message-box {
+    padding: 20px;
+    width: 450px;
+    height: 650px;
+    background-color: #918B96;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 25px;
+    position: relative;
+}
+
+.box-battery {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    width: 35px;
+}
+
+.box-time {
+    font-size: 18px;
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    font-weight: bolder;
+}
+
+.box-microfon {
+    width: 50px;
+    height: 5px;
+    background-color: #020202;
+    border-radius: 10px;
+}
+
+.messages {
+    width: 100%;
+    height: 90%;
+    padding: 20px;
+    background-image: url('../img/telegram-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.messages::-webkit-scrollbar {
+    display: none;
+}
+
+.message-item {
+    margin-bottom: 20px;
+}
+
+.sended, .recieved {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.recieved {
+    justify-content: flex-end;
+}
+
+.message {
+    width: 70%;
+    background-color:#EFFDDE;
+    padding: 15px 20px; 
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+    font-size: 18px;
+}
+
+.message-time {
+    font-size: 12px;
+    font-weight: normal;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.message-list {
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 3px 3px 10px 0px #020202;
+    padding: 3px 1px 0px 0px;
+    left: 0px;
+}
+
+.message-item-delete {
+    width: 100%;
+    padding: 5px 0px 5px 35px;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+}
+
+.message-item-delete:hover {
+    background-color: #bbbbbb;
+}
+
+.message-form {
+    width: 100%;
+}
+ 
+.textarea-label {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.textarea {
+    resize: none;
+    padding: 20px;
+    font-size: 20px;
+    width: 100%;
+    height: 65px;
+    padding-right: 50px;
+    border: none;
+    outline: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 18px;
+}
+
+.textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.send-button {
+    border: none;
+    padding: 20px;
+    background-color: dodgerblue;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+}

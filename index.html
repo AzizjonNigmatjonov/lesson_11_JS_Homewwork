@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="message-box">
+        
+        <img class="box-battery" src="./img/80-percent-battery.svg" alt="Battery Image">
+        <span class="box-microfon"></span>
+        <ul class="messages">
+            <li class="sended message-item">
+                <p class="message">Salom <br> hayr<span class="message-time">22:11</span></p>
+                <ul class="message-list">
+                    <li class="message-item-delete">
+                        o'chirish
+                    </li>
+                </ul>
+            </li>
+            <li class="recieved message-item">
+                <!-- <p class="message">yana salom</p> -->
+            </li>
+        </ul>
+        <form class="message-form">
+            <label class="textarea-label">
+                <textarea class="textarea" placeholder="type message"></textarea>
+                <button class="send-button" type="submit">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </label>
+        </form>
+    </div>
+
+    <script src="./js/moment.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
